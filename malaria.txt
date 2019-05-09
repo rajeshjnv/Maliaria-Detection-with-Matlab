@@ -1,0 +1,42 @@
+Using convolutional or pretrained AlexNet neural network in MATLAB for detecting and deploying Image Cells that contain Malaria or not!
+
+>> The dataset contains 2 folders - i) Infected ii) Uninfected
+
+>> Using splitEachLabel divided the data into training and validation data sets, 70% of the images for training and 30% for validation.
+
+>> Load the new images as an image datastore which enables us to store large image data, 
+  including data that does not fit in memory, and efficiently read batches of images during training of a CNN.
+
+>> The size of the mini-batch used for each training iteration. The default is 128.
+
+>> The initial learning rate by default is 0.01 for solver ‘sgdm’ and 0.001 for solvers ‘adam’ and ‘rmsprop’.
+  [ 'sgdm' - Stochastic gradient descent with momentum. ]
+  [ 'adam' - Adaptive moment estimation (ADAM). ]
+  [ 'rmsprop' - Root mean square propagation (RMSProp). ]
+
+Training options:-
+
+‘GradientDecayFactor’: 0.9
+‘SquaredGradientDecayFactor’:  0.999 for ‘adam’ and 0.9 for ‘rmsprop’
+‘Epsilon’:  1e-8
+‘LearnRateSchedule’:  Nil
+‘LearnRateDropFactor’:  0.1
+‘LearnRateDropPeriod’:  10
+‘L2Regularization’:  0.0001
+‘GradientThresholdMethod’:  12norm
+‘GradientThreshold’:  Infinity
+‘MaxEpochs’:  30
+‘Verbose’: True (logical)
+‘VerboseFrequency’:  50
+‘ValidationData’:  Nil
+‘ValidationFrequency’:  50
+‘ValidationPatience’:  5
+‘Shuffle’:  Once
+‘CheckpointPath’: Nil
+‘ExecutionEnvironment’:  Auto
+
+>> For sgdm optimizer, and initial learning rate and mini batch size are set to 0.0009 and 64 respectively.
+
+>> Using the command trainNetwork and the specified parameters we train neural network.
+
+>> Finally, the classification output and confidence levels are displayed
