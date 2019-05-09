@@ -1,0 +1,21 @@
+clc;
+clear all;
+close all;
+objects = imageDatastore('C:\Users\rajes\Desktop\projects\cell_images','IncludeSubfolders',true,'LabelSource','foldernames');
+[trainImgs,testImgs] = splitEachLabel(objects,0.7);
+numClasses = numel(categories(objects.Labels));
+net1= alexnet;
+layers1= net1.Layers;
+layers1(end-2) = fullyConnectedLayer(numClasses);
+layers1(end) = classificationLayer;
+options = trainingOptions('sgdm','InitialLearnRate', 0.001,'MiniBatchSize',48);
+[objectnet,info] = trainNetwork(trainImgs, layers1, options);
+ly=objectnet.Layers;
+ly1=ly(end);
+cat_name=ly1.ClassNames;
+[testpreds,scores1] = classify(objectnet,testImgs);
+conmat=confusionmat(testImgs.Labels,testpreds);
+heatmap(cat_name,cat_name,conmat);
+img=imread('C:\Users\rajes\Desktop\projects\maliarieapjt\test_set\test8.jpg');
+[preds,scores2]=classify(objectnet,img);
+preds
