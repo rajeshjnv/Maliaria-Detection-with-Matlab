@@ -14,3 +14,18 @@ Malaria is an acute febrile illness. In a non-immune individual, symptoms usuall
 # Microscopic Diagnosis
 
 Malaria parasites can be identified by examining under the microscope a drop of the patient’s blood, spread out as a “blood smear” on a microscope slide. Prior to examination, the specimen is stained to give the parasites a distinctive appearance. This technique remains the gold standard for laboratory confirmation of malaria. However, it depends on the quality of the reagents, of the microscope, and on the experience of the laboratorian.
+
+# Symptoms
+
+Malaria is an acute febrile illness. In a non-immune individual, symptoms usually appear 10–15 days after the infective mosquito bite. The first symptoms – fever, headache, and chills – may be mild and difficult to recognize as malaria. If not treated within 24 hours, P. falciparum malaria can progress to severe illness, often leading to death.
+Children with severe malaria frequently develop one or more of the following symptoms: severe anaemia, respiratory distress in relation to metabolic acidosis, or cerebral malaria. In adults, multi-organ failure is also frequent. In malaria endemic areas, people may develop partial immunity, allowing asymptomatic infections to occur.
+
+# Prevention
+
+Vector control is the main way to prevent and reduce malaria transmission. If coverage of vector control interventions within a specific area is high enough, then a measure of protection will be conferred across the community.
+WHO recommends protection for all people at risk of malaria with effective malaria vector control. Two forms of vector control – insecticide-treated mosquito nets and indoor residual spraying – are effective in a wide range of circumstances.
+
+## Refrences
+https://www.cdc.gov/malaria/diagnosis_treatment/diagnosis.html
+
+https://www.who.int/news-room/fact-sheets/detail/malaria
